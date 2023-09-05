@@ -7,10 +7,11 @@
 This code allows you to retrieve measurements obtained from the TIM310S1 LaserScanner. You can customize the acquisition radius (with a limit of 4 meters) and the desired circumference arc chord value. The program will automatically calculate the range of angles needed to acquire data within a 270-degree interval.
 
 ## 2. Prerequisites
-Download and install ``pyusb`` package:
+Download and install the following packages:
     
 ```bash
 sudo python3 -m pip install pyusb
+python3 -m pip install pysicktim
 ```
 Allow non-root access: 
 ```bash
