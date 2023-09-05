@@ -37,11 +37,9 @@ print("Size of single angular step:\t",lidar.scan.dist_angle_res)
 print("Amount of Data:\t\t\t",lidar.scan.dist_data_amnt,"\n")
 print(lidar.scan.distances)
 
-print("\n\tRSSI\n")
-
-print("Scale Factor:\t\t\t", lidar.scan.rssi_scale_fact)
-print("Scale Factor Offset:\t\t",lidar.scan.rssi_scale_fact_offset)
-print("Start Angle:\t\t\t",lidar.scan.rssi_start_ang)
-print("Size of single angular step:\t",lidar.scan.rssi_angle_res)
-print("Amount of Data:\t\t\t",lidar.scan.rssi_data_amnt,"\n")
-print(lidar.scan.rssi)
+#---------------------------------------------
+print("Numbers vector elements", len(lidar.scan.distances))
+print("Maximum number of distance recorded", max(lidar.scan.distances))
+print("Minimum number distance recorded", min(lidar.scan.distances))
+print("Central distance value", lidar.scan.distances[135])
+#---------------------------------------------
